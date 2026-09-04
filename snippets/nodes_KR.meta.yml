@@ -1,4 +1,22 @@
 proxies:
+- name: 'A - 🇰🇷 KR 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 108.162.196.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+- name: 'A - 🇰🇷 KR 02 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 72.167.230.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
 - name: 韩国
   password: 1671a252e2a97dc2bda4e515475931da
   port: 50160
@@ -8,9 +26,25 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
-  name: 🇰🇷KR_1|2.6MB/s
+  name: 🇰🇷KR_1|2.2MB/s
   password: 7eadc6dbe2ae
   port: '65443'
   server: 121.46.230.138
   type: ss
   udp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇰🇷KR_2|4.5MB/s
+  network: raw
+  port: '19179'
+  reality-opts:
+    public-key: BabvzCKB_cqCz56qFQhOWIypFKFhEWo9Eyn_JPZIAxA
+    short-id: '!!str fa1e592603c283'
+  server: 3.38.1.152
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10dd7b2d-eda2-4a47-9f6e-5093a3cd7ded
+  xudp: true
